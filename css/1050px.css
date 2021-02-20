@@ -1,0 +1,9 @@
+@media (min-width: 1050px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .card--container .card:nth-child(3) {
+    margin-top: 0;
+  }
+}

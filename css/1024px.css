@@ -1,0 +1,28 @@
+@media (min-width: 1024px) {
+  .testimonials > h2 {
+    font-size: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .projects > h2 {
+    padding-bottom: 4rem;
+    font-size: 5rem;
+  }
+
+  .footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media {
+    padding-bottom: 0;
+  }
+
+  .credits {
+    text-align: right;
+  }
+
+  .credits img {
+    margin-left: auto;
+  }
+}

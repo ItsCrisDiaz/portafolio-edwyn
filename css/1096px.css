@@ -1,0 +1,11 @@
+@media (min-width: 1096px) {
+  .testimonials-wrapper {
+    --flow-space: 0;
+    justify-content: space-between;
+  }
+
+  .testimonial-article:nth-child(3),
+  .testimonial-article:nth-child(4) {
+    margin-top: 14rem;
+  }
+}

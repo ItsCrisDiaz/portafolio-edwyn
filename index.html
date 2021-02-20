@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/700px.css" media="(min-width: 700px)" />
+    <link
+      rel="stylesheet"
+      href="./css/1024px.css"
+      media="(min-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/1050px.css"
+      media="(min-width: 1050px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/1096px.css"
+      media="(min-width: 1096px)"
+    />
+    <title>Portafolio - Edwyn</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="wrapper" location="header">
+        <section>
+          <button
+            id="hamburger"
+            class="hamburger hamburger--spring"
+            type="button"
+            onclick="changeClass()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <picture>
+            <img src="./src/images/img/logo.png" alt="" />
+          </picture>
+        </section>
+        <section>
+          <div id="burgerMenu" class="menu | hidden">
+            <ul role="menu">
+              <li>
+                <a
+                  class="white burger-menu"
+                  href="#main"
+                  onclick="removeMenu(menuOptions)"
+                  >Hola</a
+                >
+              </li>
+              <li>
+                <a
+                  class="white burger-menu"
+                  href="#projects"
+                  onclick="removeMenu(menuOptions)"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="white burger-menu"
+                  href="#testimonials"
+                  onclick="removeMenu(menuOptions)"
+                  >Testimonios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="white burger-menu"
+                  href="#contact"
+                  onclick="removeMenu(menuOptions)"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="blackSpace" class="black-space"></div>
+        </section>
+        <section>
+          <button class="button | purple">Currículum</button>
+        </section>
+      </section>
+    </header>
+    <main id="main" class="hero | flow">
+      <picture>
+        <img
+          src="./src/images/img/Edwyn.png"
+          alt="Foto de Edwyn, diseñador web"
+        />
+      </picture>
+      <h1>¡Hola a todos! Soy Edwyn Cortez</h1>
+      <p class="body">
+        Developer que le encanta implementar diseños que inspiran y atraen a las
+        personas.
+      </p>
+      <section class="card--container | wrapper flow">
+        <article class="card | flow">
+          <span class="icon github"></span>
+          <p>Implementaciones de la más alta calidad.</p>
+        </article>
+        <article class="card | flow">
+          <span class="icon figma"></span>
+          <p>
+            Diseños pixel perfect creados en la mejor herramienta de diseño.
+          </p>
+        </article>
+        <article class="card | flow">
+          <span class="icon react"></span>
+          <p>
+            React desde 0, sin dependencias y usando solo el lenguaje
+            JavaScript.
+          </p>
+        </article>
+      </section>
+    </main>
+    <section id="projects" class="projects">
+      <h2>Proyectos</h2>
+      <ul role="menu">
+        <li>Niko</li>
+        <li>Marvol</li>
+        <li>Spotifu</li>
+      </ul>
+      <section class="projects-wrapper | wrapper flow">
+        <article class="projects-container | project-grid">
+          <img
+            src="./src/images/img/niko.png"
+            alt="Vista previa del proyecto de Niko"
+          />
+          <section>
+            <h2>NIKO</h2>
+            <p>
+              Niko es una de las marcas y proveedores de equipamiento deportivo
+              más reconocidas y valiosas en todo el mundo. Por ello este
+              proyecto es dedicado a crear la interfaz de la pagina oficial de
+              Niko, donde tenemos uno de los calzados más...
+            </p>
+            <div class="flow">
+              <button class="button | purple" data-state="reversed">
+                Ver código
+              </button>
+              <button class="button | purple">Ver proyecto</button>
+            </div>
+          </section>
+        </article>
+        <article
+          class="projects-container | project-grid"
+          data-state="reversed"
+        >
+          <img
+            src="./src/images/img/marvol.png"
+            alt="Vista previa del proyecto de Marvol"
+          />
+          <section data-state="reversed">
+            <h2 data-state="reversed">MARVOL</h2>
+            <p data-state="reversed">
+              En este proyecto, podrás encontrar distintos componentes y
+              secciones de interés para todos los fanáticos de Marvol.
+            </p>
+            <div class="flow">
+              <button class="button | pink" data-state="reversed">
+                Ver código
+              </button>
+              <button class="button | pink">Ver proyecto</button>
+            </div>
+          </section>
+        </article>
+        <article class="projects-container | project-grid">
+          <img
+            src="./src/images/img/spotifu.png"
+            alt="Vista previa del proyecto de Spotifu"
+          />
+          <section>
+            <h2>SPOTIFU</h2>
+            <p>
+              Con este proyecto podrás desafiar tus habilidades como
+              desarrollador Frontend, maquetando la interfaz de Spotifu, una de
+              las apps más famosas de la industria musical.
+            </p>
+            <div class="flow">
+              <button class="button | purple" data-state="reversed">
+                Ver código
+              </button>
+              <button class="button | purple">Ver proyecto</button>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+    <section id="testimonials" class="testimonials | wrapper">
+      <h2>Testimonios</h2>
+      <section class="testimonials-wrapper | flow">
+        <article class="testimonial-article | testimonial-grid">
+          <img
+            src="./src/images/img/agustin.png"
+            alt="Agustin y su testimonio"
+          />
+          <section>
+            <h2>Agustín</h2>
+            <p>
+              Tengo algunos años trabajando con Javascript y aún así aprendí
+              varias cosas importantes de Edwyn y como utiliza Javascript en el
+              día a día.
+            </p>
+          </section>
+        </article>
+        <article
+          class="testimonial-article | testimonial-grid"
+          data-state="reversed"
+        >
+          <img src="./src/images/img/aritz.png" alt="Aritz y su testimonio" />
+          <section>
+            <h2>Aritz</h2>
+            <p>
+              Me gusto ver el porqué de las cosas del core de React, saber la
+              magia que ocurre por detrás, excelente profesor Edwyn gran
+              vocación.
+            </p>
+          </section>
+        </article>
+        <article class="testimonial-article | testimonial-grid">
+          <img
+            src="./src/images/img/victoriano.png"
+            alt="Victoriano y su testimonio"
+          />
+          <section>
+            <h2>Victoriano</h2>
+            <p>
+              Ayuda a entender el porqué de las cosas, lo cual nos da el poder
+              de aprovechar mejor el lenguaje y las herramientas que tenemos.
+            </p>
+          </section>
+        </article>
+        <article
+          class="testimonial-article | testimonial-grid"
+          data-state="reversed"
+        >
+          <img
+            src="./src/images/img/jose.png"
+            alt="Jose Enrique y su testimonio"
+          />
+          <section>
+            <h2>José Enrique</h2>
+            <p>
+              La forma como explica y trabaja los temas Edwyn, me ha ayudado a
+              comprender y sacarle el mayor provecho a HTML y CSS.
+            </p>
+          </section>
+        </article>
+      </section>
+    </section>
+    <section id="contact" class="contact | flow">
+      <section class="wrapper | flow" location="contact">
+        <h2>Contacto</h2>
+        <p>
+          Si está interesado en trabajar conmigo en su próximo proyecto, no dude
+          en ponerse en contacto.
+        </p>
+        <form action="" class="form | flow">
+          <input type="text" name="name" placeholder="Nombre completo" />
+          <input type="email" name="email" placeholder="Correo electrónico" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Mensaje"
+          ></textarea>
+          <input type="submit" value="Enviar mensaje" class="button | purple" />
+        </form>
+      </section>
+    </section>
+    <footer class="footer">
+      <section class="wrapper">
+        <section class="social-media | flow">
+          <h3>Contacto</h3>
+          <p>
+            <span class="icon email" location="footer"></span>Correo electrónico
+          </p>
+          <p><span class="icon phone" location="footer"></span>Teléfono</p>
+          <p><span class="icon instagram" location="footer"></span>Instagram</p>
+          <p><span class="icon twitter" location="footer"></span>Twitter</p>
+        </section>
+        <section class="credits">
+          <img
+            src="./src/images/img/logo-secondary.png"
+            alt="Logo del sitio en color rosa"
+          />
+          <p>
+            Hecho con <span class="icon heart" location="credits"></span> de
+            Edwyn.
+          </p>
+          <p>Copyright 2021 - Todos los derechos reservados</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>
