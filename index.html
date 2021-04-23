@@ -270,14 +270,25 @@
           en ponerse en contacto.
         </p>
         <form action="" class="form | flow">
-          <input type="text" name="name" placeholder="Nombre completo" />
-          <input type="email" name="email" placeholder="Correo electrónico" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre completo"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          />
           <textarea
             name="message"
             id="message"
             cols="30"
             rows="5"
             placeholder="Mensaje"
+            required
           ></textarea>
           <input type="submit" value="Enviar mensaje" class="button | purple" />
         </form>

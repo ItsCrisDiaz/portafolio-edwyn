@@ -24,7 +24,10 @@
 
   .menu ul {
     display: flex;
-    gap: 25px;
+  }
+
+  .menu ul > * + * {
+    margin-left: 2.5rem;
   }
 
   .menu li {
