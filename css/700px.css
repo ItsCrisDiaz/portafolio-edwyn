@@ -78,6 +78,10 @@
     --flow-space: 0;
   }
 
+  .projects-container div > * + * {
+    margin-left: 1rem;
+  }
+
   .projects-container button {
     width: 150px;
     font-size: 1.4rem;
